@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Naked twins are Sudoku boxes having identical values along one of the following-- row, columns or grid squares. 
+
+Identical value across two boxes in the same unit enforces the constraint that no other box in the same unit can contain the same value. This in turn helps in reducing the  search space. As the localization constraint is enforced it further introduces new constraints for other parts of the board that can help us further reduce the number of possibilities -- The well known divide and conquer strategy
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Digonal Suduko has an additional requirement -- all the boxes along the diagonals MUST have the digit appearing only once. This requires us to account for additional boxes along the diagonals and applly the techniques of Eimination, Only choice, Search and Naked Twins along the diagonal boxes. 
 
 ### Install
 
